@@ -1,2 +1,1 @@
-
-    else:
+        print("Invalid choice")

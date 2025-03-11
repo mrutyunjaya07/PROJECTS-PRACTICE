@@ -15,13 +15,15 @@ import random
 
 gen_num=int(random.randint(1, 100))
 while True :
-    guess_num=int(input("Guess the number between 1 to 100: "))
-    if guess_num > gen_num:
-        print("Too high.")
-    elif guess_num < gen_num:
-        print("Too low.")
-    elif guess_num==gen_num:
-        print("Congratulations.")
-        break
-    else:
+    try:
+        guess_num=int(input("Guess the number between 1 to 100: "))
+    
+        if guess_num > gen_num:
+            print("Too high.")
+        elif guess_num < gen_num:
+            print("Too low.")
+        else :
+            print("Congratulations.")
+            break
+    except:
         print("Invalid choice")
